@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-destaque: #ED145B;
+    --cor-gradiente-preto: linear-gradient(113deg, #000 0%, #1E2021 44.96%, #1E2022 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 21px 18px 21px;
+    background: var(--cor-gradiente-preto);
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.container {
+    display: flex;
+    width: 65rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--cor-destaque);
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#entrada-de-texto {
+    display: flex;
+    height: 12rem;
+    padding: 1.4rem 2.5rem 2.5rem 2.5rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    align-self: stretch;
+    border-radius: 0.625rem;
+    background: #FFF;
+    font-size: 2rem;
+}
+
+#entrada-de-texto::placeholder {
+    color: #828282;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#botao-palavrachave {
+    display: flex;
+    padding: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: var(--cor-destaque);
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#resultado-palavrachave {
+    display: flex;
+    border-radius: 0.625rem;
+    align-self: stretch;
+    color: var(--cor-destaque);
+    font-size: 2.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    max-height: 50vh;
+    overflow: auto;
+}
